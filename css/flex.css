@@ -1,0 +1,131 @@
+body {
+    height: 100%;
+    background-color: rgb(240, 223, 202);
+    
+    display: flex;      
+}
+
+ .wrapper {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+    margin:0 auto;
+    margin-bottom: 10%;
+}
+
+.boxOne{
+    width: 50%;
+    border: 10px solid antiquewhite;
+    background-color: cornsilk;
+
+    display: flex;
+    justify-content: center;  
+}
+
+.formular {
+    padding: 5%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 95%;
+    background-color: rgb(203, 243, 255);
+    border: 2px solid rgb(174, 194, 221);
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 100%;
+    background-color: rgb(203, 243, 255);
+    border: 2px solid rgb(174, 194, 221);
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.boxTwo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#plastic {
+    width: 100%;
+    height: 100%;
+    border: 10px solid antiquewhite;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxThree  {
+    width: 50%;
+    border: 10px solid antiquewhite;
+    background-color: cornsilk;
+    
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+
+.boxThree > span{
+    text-align: center;
+    padding: 5%;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wrapper > div {  
+    height: 100%;
+    margin-top: 10%;   
+}
+
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        flex-direction: row;
+    }    
+    .boxOne ,
+    .boxThree {
+      background-color: transparent;
+      width: 20%;
+      
+    }
+} 
+
+@media screen and (min-width: 1256px) {
+    .boxOne ,
+    .boxThree {
+      
+      width: 20%;
+      
+    }
+  }
+
+
+
+
+
+

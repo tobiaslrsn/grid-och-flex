@@ -1,0 +1,108 @@
+body {
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.grid-container {
+    display: grid;
+    height: 90vh;
+    gap: 20px;
+    
+    grid-template-rows: none;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+
+#three-stripes {
+    width: 100%;
+    height: 100%;
+  
+    border-radius: 10px;
+    box-shadow: gray 3px 3px 10px;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-two{
+    background-image: url(../images/adi-dassler1.jpeg);
+    background-position: center;
+    background-size: cover;
+
+    box-shadow: gray 3px 3px 10px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    
+    border-radius: 20px;
+}
+
+.column-two > span, h1 {
+    display: grid;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.column-three{
+    background-image: url(../images/dasslerfactory.jpeg);
+    background-position: center;
+    background-size: cover;
+
+    box-shadow: gray 3px 3px 10px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
+    border-radius: 10px; 
+}
+
+.column-three > span, h1 {
+    display: grid;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.column-four > span {
+    display: grid;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+#passarella {
+    display: grid;
+
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: gray 3px 3px 10px;
+ 
+}
+
+@media screen and (max-width: 768px) {
+      
+    .grid-container {
+     grid-template-columns: none;
+     grid-template-rows: 20% 1fr 1fr 20%;
+     height: 100vh;
+   
+       }
+} 
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+  }
+a:visited {
+    color: white;
+    text-decoration: none;
+}
